@@ -26,4 +26,4 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_B24DA8A1: {r: 0.3915094, g: 0.630133, b: 1, a: 0}
+    - Color_B24DA8A1: {r: 0.5882353, g: 0.9490196, b: 1.4980392, a: 0}
