@@ -50,7 +50,7 @@ public class HittingEnemy : MonoBehaviour
 
     private void Rush(Vector3 position)
     {
-        positionToGo = position-transform.position;
+        positionToGo = position;
         transform.LookAt(position);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,0);
         isUpdatable = true;

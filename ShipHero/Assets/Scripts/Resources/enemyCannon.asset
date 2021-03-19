@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32ebcc5287e37d4695cb26f4eac8c19, type: 3}
+  m_Name: enemyCannon
+  m_EditorClassIdentifier: 
+  self: {fileID: 6810095799624948522, guid: 861d08fa0069a87469a2ee48f0170c2b, type: 3}
+  WeaponPower: 15
+  canFly: 0
+  additionalVFX: 0
+  effect: {fileID: 0}
+  isEnemyCannon: 1

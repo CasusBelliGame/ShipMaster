@@ -5,18 +5,23 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] float HitPower;
-    private void OnTriggerEnter(Collider other) {
+    private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Player"){
-            other.gameObject.GetComponent<ShipController>().speed = other.gameObject.GetComponent<ShipController>().speed/10;
+            other.gameObject.GetComponent<ShipController>().speed = other.gameObject.GetComponent<ShipController>().speed/2;
             other.gameObject.GetComponent<ShipController>().ChangeHealth(-HitPower);
         }
-        if(other.tag == "Cannonball"){
-            Destroy(other.gameObject);
-        }
+
     }
 
-    private void OnTriggerStay(Collider other) {
-        if(other.tag != "Player") return;
+    private void OnCollisionStay(Collision other) {
+        if(other.gameObject.tag != "Player") return;
         other.gameObject.GetComponent<ShipController>().ChangeHealth(-HitPower* 0.01f);
+    }
+    private void OnCollisionExit(Collision other) {
+        if(other.gameObject.tag == "Player"){
+            other.gameObject.GetComponent<ShipController>().speed = other.gameObject.GetComponent<ShipController>().speed*2;
+
+        }
+  
     }
 }
