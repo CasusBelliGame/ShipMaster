@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff12c1facbd4e3488dc605f69a2483c, type: 3}
+  m_Name: PlayersFirstShip
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 99d9dafe9fde58a49a78b072fa62cbbe, type: 3}
+  isBought: 1
+  isEquipped: 1
+  shipCost: 150
+  self: {fileID: 11400000, guid: 1a5876e1bd4c4364eae656ab912644d2, type: 2}
+  PrefabOfShip: {fileID: 0}
+  speed: 0
+  maxSpeed: 3
+  armor: 0
+  MaxArmor: 3
+  UpgradeSpeedMoney: 96000000fa000000c2010000
+  UpgradeArmorMoney: 960000002c010000f4010000
+  firstCannon: {fileID: 11400000, guid: a9e3087de100ce3428f911879931c377, type: 2}
+  firstCannonObject: {fileID: 0}
+  secondCannon: {fileID: 11400000, guid: b87c3e3f193559c49901c27125923786, type: 2}
+  secondCannonObject: {fileID: 0}
+  thirdCannon: {fileID: 11400000, guid: 5ad472dba25fa0146a35858276e26727, type: 2}
+  thirdCannonObject: {fileID: 0}
+  mortar: {fileID: 11400000, guid: aa09bd0f92feeea408ad8f6e5710a7f5, type: 2}
+  mortarObject: {fileID: 0}

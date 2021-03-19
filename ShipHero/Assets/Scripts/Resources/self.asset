@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c1a319bd44d9b4cbec5ac19ed1e5c1, type: 3}
   m_Name: self
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  curHealth: 100
+  maxHealth: 10000
+  curHealth: 9990
   armor: 1
+  goldAmount: 230
+  myShip: {fileID: 11400000, guid: 4d6535b9e98970c4ea6c8f8a1e9f8239, type: 2}
+  myShipPrefab: {fileID: 0}
