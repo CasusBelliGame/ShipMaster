@@ -83,6 +83,7 @@ public class ShipController : MonoBehaviour
             }
         }
         if(enemyToAttack == null) return;
+        enemyToAttack.GetComponent<CannonEnemy>().Alert.SetActive(true);
         LaunchGun(enemyToAttack.transform.position);
         timePassed = 0;
     }

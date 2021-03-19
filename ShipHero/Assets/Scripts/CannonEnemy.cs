@@ -6,6 +6,7 @@ using UnityEngine;
 public class CannonEnemy : MonoBehaviour
 {
     float timePassed;
+    public GameObject Alert;
     Rigidbody r;
     [SerializeField] float timeBetweenFire;
     GameObject player;
