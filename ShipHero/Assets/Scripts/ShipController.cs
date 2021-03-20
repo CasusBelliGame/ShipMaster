@@ -21,7 +21,7 @@ public class ShipController : MonoBehaviour
     [SerializeField] float timeBetweenFire;
     [SerializeField] public float speed;
     [SerializeField] float rotSpeed;
-
+    [SerializeField] float hitAngle;
     void Start()
     {
         shipY = transform.position.y;
@@ -40,14 +40,11 @@ public class ShipController : MonoBehaviour
         horInput = stick.Horizontal;
         verInput = stick.Vertical;
         if(Mathf.Abs(horInput) >= 0.1f || Mathf.Abs(verInput) >= 0.1f){
-            shipRotation.transform.LookAt(shipRotation.transform.position + new Vector3(horInput,0,verInput));
-            //transform.eulerAngles = Vector3.Lerp(new Vector3(0,transform.eulerAngles.y,0),new Vector3(0,shipRotation.transform.eulerAngles.y,0),Time.deltaTime*3);
-            transform.Rotate(new Vector3(0,shipRotation.transform.rotation.y-transform.rotation.y,0));
             r.velocity = new Vector3(horInput*speed,0,verInput*speed);
-            //transform.LookAt(transform.position + r.velocity);
             isMoving = true;
+            shipRotation.transform.LookAt(shipRotation.transform.position + new Vector3(horInput,0,verInput));
+            transform.rotation = Quaternion.Lerp(transform.rotation,shipRotation.transform.rotation,Time.deltaTime*rotSpeed);
         }else{
-            shipRotation.transform.rotation = transform.rotation;
             r.velocity = Vector3.zero;
             isMoving = false;
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -62,7 +59,9 @@ public class ShipController : MonoBehaviour
                 }
             }
             if(enemyToAttack == null) return;
-            transform.LookAt(enemyToAttack.transform.position);
+            shipRotation.transform.LookAt(enemyToAttack.transform.position);
+            transform.rotation = Quaternion.Lerp(transform.rotation,shipRotation.transform.rotation,Time.deltaTime*rotSpeed);
+
         }
 
         Fire();
@@ -85,16 +84,17 @@ public class ShipController : MonoBehaviour
         if(enemyToAttack == null) return;
         enemyToAttack.GetComponent<CannonEnemy>().Alert.SetActive(true);
         LaunchGun(enemyToAttack.transform.position);
-        timePassed = 0;
+        
     }
 
     private void LaunchGun(Vector3 position)
     {
-        transform.LookAt(position);
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,0);
+        float angle = Vector2.Angle(new Vector2(transform.forward.x,transform.forward.z),new Vector2(position.x-transform.position.x,position.z-transform.position.z));
+        if(angle > hitAngle) return;
         GameObject cannon = Instantiate(CannonBall,InsPoint.position,Quaternion.identity);
         explode.Play();
         cannon.GetComponent<CannonBall>().hitPoint = position;
+        timePassed =0;
     }
 
 
