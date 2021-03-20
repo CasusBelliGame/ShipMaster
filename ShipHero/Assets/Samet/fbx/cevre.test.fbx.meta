@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cdfc85ff65053c4e8c5b163f5690528
+guid: 3cffd857a4a056a42bd03e2e59ced7c1
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,33 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: cannon
-    second: {fileID: 2100006, guid: bae110eee250e4b418b188f4ae4e3170, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: hull
-    second: {fileID: 2100000, guid: 89669dddbf185514881ea9086f47054a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: hull.in
-    second: {fileID: 2100000, guid: 00640554a377b50468a166844cfdf8ef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ropes
-    second: {fileID: 2100000, guid: 9aa0ac3bb77b38f4488bab2ed9b26f1b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: sail
-    second: {fileID: 2100000, guid: b52419bd6a111414ab1feedb7a09084a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: sailWhite
-    second: {fileID: 2100000, guid: 17d4ed0ad52905d41b1b04d37165ca04, type: 2}
+      name: son
+    second: {fileID: 2100000, guid: 21f2efe1160b4eb4fbd32a757a6fc30c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
