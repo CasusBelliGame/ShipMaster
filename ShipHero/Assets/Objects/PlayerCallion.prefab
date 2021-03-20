@@ -4353,7 +4353,7 @@ ParticleSystem:
     vector0_0:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 1
+      scalar: 1.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4368,7 +4368,7 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.66586363
+          time: 0.72439635
           value: 1
           inSlope: 2
           outSlope: 2
@@ -4422,7 +4422,7 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.1317094
+          time: 0.02195339
           value: 1
           inSlope: -0
           outSlope: -0
@@ -4433,11 +4433,11 @@ ParticleSystem:
         - serializedVersion: 3
           time: 1
           value: 0
-          inSlope: 0
-          outSlope: 0
+          inSlope: -1.9837674
+          outSlope: -1.9837674
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0
+          inWeight: 0.10831276
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -4900,7 +4900,7 @@ ParticleSystemRenderer:
   m_RenderMode: 2
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -4914,7 +4914,7 @@ ParticleSystemRenderer:
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
-  m_VertexStreams: 0001040520
+  m_VertexStreams: 000104052003
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
