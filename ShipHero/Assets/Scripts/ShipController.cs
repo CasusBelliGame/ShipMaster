@@ -92,6 +92,7 @@ public class ShipController : MonoBehaviour
         float angle = Vector2.Angle(new Vector2(transform.forward.x,transform.forward.z),new Vector2(position.x-transform.position.x,position.z-transform.position.z));
         if(angle > hitAngle) return;
         GameObject cannon = Instantiate(CannonBall,InsPoint.position,Quaternion.identity);
+        cannon.transform.eulerAngles = new Vector3(110,cannon.transform.eulerAngles.y,cannon.transform.eulerAngles.z);
         explode.Play();
         cannon.GetComponent<CannonBall>().hitPoint = position;
         timePassed =0;
