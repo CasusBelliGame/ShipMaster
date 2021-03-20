@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sand
-  m_Shader: {fileID: -6465566751694194690, guid: dfb46a992be29d24eb50acc5a519eb4a,
+  m_Name: toon
+  m_Shader: {fileID: -6465566751694194690, guid: f21e86990d432cc4b804656bb387b2e0,
     type: 3}
   m_ShaderKeywords: _SEGMENTED_ON
   m_LightmapFlags: 4
@@ -24,14 +24,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_D7D2919C:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_2A455339: 0.5
     - Vector1_58F5CB19: 0.5
+    - Vector1_5A9E5888: 0
     - Vector1_B781CA44: 5
     - Vector1_CAB9C154: 0.5
+    - Vector1_CD9CB9E8: 0.1
+    - Vector1_F5DCAAE8: 0.5
     - _AmbientCol: 0
     - _Clipped: 0
     - _ColBright: 0
@@ -54,5 +62,6 @@ Material:
     - Color_6512CD7A: {r: 1, g: 1, b: 1, a: 0}
     - Color_85BA657: {r: 1, g: 1, b: 1, a: 0}
     - Color_F25F2FC1: {r: 1, g: 1, b: 1, a: 0}
+    - Color_FA669E8D: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
